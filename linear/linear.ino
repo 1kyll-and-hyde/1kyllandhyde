@@ -18,29 +18,29 @@ void setup()
   pinMode(10, INPUT);
   pinMode(11, INPUT);
 
-  L16.attach(LINEAR, L16_MS, L16_MS2);
+  L16.attach(LINEAR, L16_MSMIN, L16_MSMAX);
   L16.writeMicroseconds(L16value);
 }
 
 void loop() {
-  BMAX = digitalRead(input);
+  BMAX = digitalRead(10);
 
   if (BMAX == HIGH) {
     while (button != 100) {
       button++;
 
-      L16Value = map(button, 0, 100, L16_MS, L16_MS2);
-      L16.writeMicroseconds(L16Value);
+      L16value = map(button, 0, 100, L16_MSMIN, L16_MSMAX);
+      L16.writeMicroseconds(L16value);
     }
   }
 
-  BMIN = digitalRead(input2);
+  BMIN = digitalRead(11);
   if (BMIN == HIGH) {
     while (button != 0) {
       button--;
 
-      L16Value = map(button, 0, 100, L16_MS, L16_MS2);
-      L16.writeMicroseconds(L16Value);
+      L16value = map(button, 0, 100, L16_MSMIN, L16_MSMAX);
+      L16.writeMicroseconds(L16value);
     }
   }
 
