@@ -72,20 +72,31 @@ void loop() {
    if (Serial.available())
     BTSerial.write(Serial.read());
 
-  if(x<0){
+  if(x<-50){
     Serial.print("오른쪽으로!!");
     Serial.print(",");
     
     BTSerial.print("오른쪽으로!!");
     BTSerial.print(",");
   }
-  if(x>0){
+
+  if (x<=50 && x>-50) {
+        Serial.print("🤗!!");
+    Serial.print(",");
+    
+    BTSerial.print("🤗!!");
+    BTSerial.print(",");
+  }
+
+  if(x>50){
     Serial.print("왼쪽으로!!");
     Serial.print(",");
     
     BTSerial.print("왼쪽으로!!");
     BTSerial.print(",");
   }
+  Serial.print(x);
+  Serial.print(",");
 
   // 블루투스
   Serial.println("888");
