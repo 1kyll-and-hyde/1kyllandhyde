@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Doctor : Patient List</title>
+<style type="text/css">
+@import
+	url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap')
+	;
+	
+body {
+	background-color: #fff0dbff;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+img.doc_character {
+	position: relative;
+	left: 80px;
+	top: 30px;
+}
+
+#doc_title {
+	position: relative;
+	left: 100px;
+	top: -5px;
+	font-size: 50px;
+}
+
+div.doc {
+	position: absolute;
+	left: 270px;
+	top: 70px;
+	width: 1000px;
+	height: 150px;
+	background-color: #FF9364;
+	border-radius: 10px;
+}
+
+div.list {
+	position: absolute;
+	left: 270px;
+	top: 250px;
+	width: 1000px;
+	height: 200px;
+	background-color: #FFC192;
+	border-radius: 10px;	
+}
+
+table {
+	position: absolute;
+	left: 45px;
+	top: 35px;
+	background-color: white;
+}
+
+table, th, td {
+	border: 1px solid gray;
+	border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+	<div class="doc">
+		<img alt="Main" src="../image/doctor.png" class="doc_character" width="120" height="100">
+		<b id="doc_title">&nbspPick Me 보! 보! for Doctor</b>
+	</div>
+	
+	<div class="list">
+		<table style="border-radius: 10px">
+			<tr>
+				<th width="200" style="background-color: #FDEBC8">환자 번호</th>
+				<th width="150" style="background-color: #FDEBC8">이름</th>
+				<th width="150" style="background-color: #FDEBC8">나이</th>
+				<th width="150" style="background-color: #FDEBC8">병명</th>
+				<th width="250" style="background-color: #FDEBC8">대여 기기</th>
+			</tr>
+			<tr align="center">
+				<td width="200" onclick="location.href='doctorResume.html'">12345</td>
+				<td width="150" onclick="location.href='doctorResume.html'">한이음</td>
+				<td width="150" onclick="location.href='doctorResume.html'">20210928</td>
+				<td width="150" onclick="location.href='doctorResume.html'">Broken</td>
+				<td width="250" onclick="location.href='doctorResume.html'">All Function 워커</td>
+			</tr>
+			<tr align="center">
+				<td width="200">34897</td>
+				<td width="150">1kyll</td>
+				<td width="150">20210413</td>
+				<td width="150">골절(1주차)</td>
+				<td width="250">계단보행보조 워커</td>
+			</tr>
+			<tr align="center">
+				<td width="200">34578</td>
+				<td width="150">픽미보</td>
+				<td width="150">19970428</td>
+				<td width="150">디스크</td>
+				<td width="250">목발</td>
+			</tr>
+			<tr align="center">
+				<td width="200">01938</td>
+				<td width="150">김제니</td>
+				<td width="150">19950203</td>
+				<td width="150">골절(5주차)</td>
+				<td width="250">All Function 워커</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

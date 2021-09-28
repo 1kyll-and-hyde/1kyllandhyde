@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Doctor : Menu</title>
+<style type="text/css">
+@import
+	url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap')
+	;
+	
+body {
+	background-color: #fff0dbff;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+img.doc_character {
+	position: relative;
+	left: 80px;
+	top: 30px;
+}
+
+#doc_title {
+	position: relative;
+	left: 100px;
+	top: -5px;
+	font-size: 50px;
+}
+
+div.doc {
+	position: absolute;
+	left: 270px;
+	top: 70px;
+	width: 1000px;
+	height: 150px;
+	background-color: #FF9364;
+	border-radius: 10px;
+}
+
+div.menu {
+	position: absolute;
+	left: 270px;
+	top: 250px;
+	width: 1000px;
+	height: 400px;
+	background-color: #FFC192;
+	border-radius: 10px;	
+}
+
+table {
+	position: absolute;
+	left: 140px;
+	top: 90px;
+}
+
+th, td {
+	font-family: 'Noto Sans KR thin 100', sans-serif;
+}
+</style>
+</head>
+<body>
+	<div class="doc">
+		<img alt="Main" src="../image/doctor.png" class="doc_character" width="120" height="100">
+		<b id="doc_title">&nbspPick Me 보! 보! for Doctor</b>
+	</div>
+	
+	<div class="menu">
+		<table>
+			<tr id="image_tb">
+				<td>
+					<img alt="hospital" src="../image/hospital.png" width="150" height="150">
+				</td>
+				<td width="30"></td>
+				<td>
+					<img alt="doctor" src="../image/doctor.png" width="150" height="150">
+				</td>
+				<td width="30"></td>
+				<td>
+					<img alt="patient" src="../image/patient.png" width="150" height="150" onclick="location.href='doctorPatientList.html'">
+				</td>
+				<td width="30"></td>
+				<td>
+					<img alt="setting" src="../image/setting.png" width="150" height="150">
+				</td>
+			</tr>
+			
+			<tr align="center">
+				<td>
+					<h3>병원 정보</h3>
+				</td>
+				<td width="30"></td>
+				<td>
+					<h3>의사 정보</h3>
+				</td>
+				<td width="30"></td>
+				<td onclick="location.href='doctorPatientList.html'">
+					<h3>환자 정보</h3>
+				</td>
+				<td width="30"></td>
+				<td>
+					<h3>설정</h3>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
