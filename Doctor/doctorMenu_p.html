@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Doctor : Menu</title>
+<title>Doctor : Menu_Patient</title>
 <style type="text/css">
 @import
 	url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap')
@@ -67,37 +67,37 @@ th, td {
 		<table>
 			<tr id="image_tb">
 				<td>
-					<img alt="hospital" src="../image/hospital.png" width="150" height="150">
+					<img alt="hospital" src="../image/add.png" width="150" height="150" onclick="location.href='patient_Add.html'">
 				</td>
 				<td width="30"></td>
 				<td>
-					<img alt="doctor" src="../image/doctor.png" width="150" height="150">
+					<img alt="doctor" src="../image/write.png" width="150" height="150" onclick="location.href='doctorPatientList.html'">
 				</td>
 				<td width="30"></td>
 				<td>
-					<img alt="patient" src="../image/patient.png" width="150" height="150" onclick="location.href='doctorMenu_p.html'">
+					<img alt="patient" src="../image/delete.png" width="150" height="150" onclick="location.href='patient_Delete.html'">
 				</td>
 				<td width="30"></td>
 				<td>
-					<img alt="setting" src="../image/setting.png" width="150" height="150">
+					<img alt="setting" src="../image/find.png" width="150" height="150" onclick="location.href='patient_Find.html'">
 				</td>
 			</tr>
 			
 			<tr align="center">
-				<td>
-					<h3>병원 메뉴</h3>
+				<td onclick="location.href='patient_Add.html'">
+					<h3>환자 정보 추가</h3>
 				</td>
 				<td width="30"></td>
-				<td>
-					<h3>의사 메뉴</h3>
+				<td onclick="location.href='doctorPatientList.html'">
+					<h3>환자 정보 수정</h3>
 				</td>
 				<td width="30"></td>
-				<td onclick="location.href='doctorMenu_p.html'">
-					<h3>환자 메뉴</h3>
+				<td onclick="location.href='patient_Delete.html'">
+					<h3>환자 정보 삭제</h3>
 				</td>
 				<td width="30"></td>
-				<td>
-					<h3>설정</h3>
+				<td onclick="location.href='patient_Find.html'">
+					<h3>환자 정보 검색</h3>
 				</td>
 			</tr>
 		</table>

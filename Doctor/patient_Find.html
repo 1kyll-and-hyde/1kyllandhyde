@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Doctor : Patient List</title>
+<title>Doctor : Patient Find page</title>
 <style type="text/css">
 @import
 	url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap')
@@ -41,15 +41,22 @@ div.list {
 	left: 270px;
 	top: 250px;
 	width: 1000px;
-	height: 250px;
+	height: 270px;
 	background-color: #FFC192;
 	border-radius: 10px;	
 }
 
-table {
+#tb_head {
 	position: absolute;
 	left: 45px;
 	top: 35px;
+	border-color: #FFC192;
+}
+
+#tb_body {
+	position: absolute;
+	left: 45px;
+	top: 85px;
 	background-color: white;
 }
 
@@ -61,7 +68,7 @@ table, th, td {
 #btn1 {
 	position: absolute;
 	left: 450px;
-	top: 190px;
+	top: 210px;
 }
 </style>
 </head>
@@ -72,7 +79,29 @@ table, th, td {
 	</div>
 	
 	<div class="list">
-		<table style="border-radius: 10px">
+		<table id="tb_head">
+			<tr>
+				<th style="border-color: #FFC192; width: 100px;">환자 번호</th>
+				<td style="border-color: #FFC192;">
+					<input style="text-align: center;">
+				</td>
+				
+				<td style="border-color: #FFC192; width: 30px;"></td>
+				
+				<th style="border-color: #FFC192; width: 100px;">이름</th>
+				<td style="border-color: #FFC192;">
+					<input style="text-align: center;">
+				</td>
+				
+				<td style="border-color: #FFC192; width: 225px;"></td>
+				
+				<td style="border-color: #FFC192; text-align: center;">
+					<button id="btn2" style="width: 70px; height: 30px;" onclick="location.href='patient_Write_2.html'">검색</button>
+				</td>
+			</tr>
+		</table>
+		
+		<table style="border-radius: 10px" id="tb_body">
 			<tr>
 				<th width="200" style="background-color: #FDEBC8">환자 번호</th>
 				<th width="150" style="background-color: #FDEBC8">이름</th>
@@ -81,11 +110,11 @@ table, th, td {
 				<th width="250" style="background-color: #FDEBC8">대여 기기</th>
 			</tr>
 			<tr align="center">
-				<td width="200" onclick="location.href='patient_Write.html'">12345</td>
-				<td width="150" onclick="location.href='patient_Write.html'">한이음</td>
-				<td width="150" onclick="location.href='patient_Write.html'">20210928</td>
-				<td width="150" onclick="location.href='patient_Write.html'">Broken</td>
-				<td width="250" onclick="location.href='patient_Write.html'">All Function 워커</td>
+				<td width="200" onclick="location.new='patient_Write.html'">12345</td>
+				<td width="150" onclick="location.href='patient_Write.html'">보보픽</td>
+				<td width="150" onclick="location.href='patient_Write.html'">19980301</td>
+				<td width="150" onclick="location.href='patient_Write.html'">골절(3주차)</td>
+				<td width="250" onclick="location.href='patient_Write.html'">목발</td>
 			</tr>
 			<tr align="center">
 				<td width="200">34897</td>
@@ -100,13 +129,6 @@ table, th, td {
 				<td width="150">19970428</td>
 				<td width="150">디스크</td>
 				<td width="250">목발</td>
-			</tr>
-			<tr align="center">
-				<td width="200">01938</td>
-				<td width="150">김제니</td>
-				<td width="150">19950203</td>
-				<td width="150">골절(5주차)</td>
-				<td width="250">All Function 워커</td>
 			</tr>
 		</table>
 		

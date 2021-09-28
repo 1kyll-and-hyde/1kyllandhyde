@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Doctor : Patient Write page</title>
+<style type="text/css">
+@import
+	url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap')
+	;
+	
+body {
+	background-color: #fff0dbff;
+	font-family: 'Noto Sans KR', sans-serif;
+	height: 900px;
+}
+
+img.doc_character {
+	position: relative;
+	left: 80px;
+	top: 30px;
+}
+
+#doc_title {
+	position: relative;
+	left: 100px;
+	top: -5px;
+	font-size: 50px;
+}
+
+div.doc {
+	position: absolute;
+	left: 270px;
+	top: 70px;
+	width: 1000px;
+	height: 150px;
+	background-color: #FF9364;
+	border-radius: 10px;
+}
+
+div.resume {
+	position: absolute;
+	left: 270px;
+	top: 250px;
+	width: 1000px;
+	height: 580px;
+	background-color: #FFC192;
+	border-radius: 10px;	
+}
+
+table {
+	position: absolute;
+	left: 30px;
+	top: 30px; 
+}
+
+th, td {
+	border: 1px solid black;
+	font-family: 'Noto Sans KR thin 100', sans-serif;
+}
+</style>
+</head>
+<body>
+	<div class="doc">
+		<img alt="Main" src="../image/doctor.png" class="doc_character" width="120" height="100">
+		<b id="doc_title">&nbspPick Me 보! 보! for Doctor</b>
+	</div>
+	
+	<div class="resume">
+		<table id="resume">
+			<tr>
+				<td width="150" height="150" style="background: white; text-align: center;" rowspan="3">
+					<img alt="patient" src="../image/patient.png" width="100" height="100">
+				</td>
+				<th style="background-color: #FDEBC8" width="100">
+					<h3>환자 번호</h3>
+				</th>
+				<td width="150" style="background: white; text-align: center;">
+					<h4>12345</h4>
+				</td>
+				
+				<th style="background-color: #FDEBC8" width="100">
+					<h3>이름</h3>
+				</th>
+				<td width="150" style="background: white; text-align: center;">
+					<input type="text" id="name" value="보보픽" style="text-align: center; width: 100px">
+				</td>
+				
+				<th style="background-color: #FDEBC8" width="100">
+					<h3>나이</h3>
+				</th>
+				<td width="150" style="background: white; text-align: center;">
+					<input type="date" id="age" value="1998-03-01" style="text-align: center; width: 130px">
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="6" height="5" style="border: 1px solid #FFC192;">
+				</td>
+			</tr>
+			
+			<tr>
+				<th style="background-color: #FDEBC8" width="100">
+					<h3>병원명</h3>
+				</th>
+				<td width="150" style="background: white; text-align: center;">
+					<h4>한이음 병원</h4>
+				</td>
+				
+				<th style="background-color: #FDEBC8" width="100">
+					<h3>병명</h3>
+				</th>
+				<td width="150" style="background: white; text-align: center;">
+					<input type="text" id="broken" value="골절(3주차)" style="text-align: center; width: 100px">
+				</td>
+				
+				<th style="background-color: #FDEBC8" width="100">
+					<h3>H.P</h3>
+				</th>
+				<td width="150" style="background: white; text-align: center;">
+					<input type="text" id="ph" value="01012345678" style="text-align: center; width: 100px">
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="6" height="5" style="border: 1px solid #FFC192;">
+				</td>
+			</tr>
+			
+			<tr>
+				<th style="background-color: #FDEBC8" colspan="2">
+					<h3>대여 기기</h3>
+				</th>
+				<td width="150" style="background: white; text-align: center;" colspan="5">
+					<input type="text" id="walk" value="목발" style="text-align: center; width: 300px">
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="6" height="5" style="border: 1px solid #FFC192;">
+				</td>
+			</tr>
+			
+			<tr>
+				<th style="background-color: #FDEBC8" colspan="2">
+					<h3>대여 시작 날짜</h3>
+				</th>
+				<td width="150" style="background: white; text-align: center;" colspan="5">
+					<input type="date" id="startdate" value="2021-09-28" style="text-align: center; width: 300px">
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="6" height="5" style="border: 1px solid #FFC192;">
+				</td>
+			</tr>
+			
+			<tr>
+				<th style="background-color: #FDEBC8" colspan="2">
+					<h3>대여 종료 날짜</h3>
+				</th>
+				<td width="150" style="background: white; text-align: center;" colspan="5">
+					<input type="date" id="enddate" value="2021-09-29" style="text-align: center; width: 300px">
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="6" height="5" style="border: 1px solid #FFC192;">
+				</td>
+			</tr>
+			
+			<tr>
+				<th style="background-color: #FDEBC8" colspan="2">
+					<h3>반납 여부</h3>
+				</th>
+				<td width="150" style="background: white; text-align: center;" colspan="5">
+					<input type="text" id="return" value="X" style="text-align: center; width: 300px">
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="6" height="15" style="border: 1px solid #FFC192;">
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="7" style="border: 1px solid #FFC192; background: #FFC192; text-align: center;">
+					<button type="button" style="width: 100px; height: 30px;" onclick="location.href='patient_Find.html'"><b>검색 완료</b></button>
+					<b style="padding-left: 200px"></b>
+					<button type="button" style="width: 100px; height: 30px;" onclick="location.href='doctorMenu_p.html'"><b>환자 메뉴로</b></button>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

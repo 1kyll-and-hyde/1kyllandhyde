@@ -41,7 +41,7 @@ div.list {
 	left: 270px;
 	top: 250px;
 	width: 1000px;
-	height: 200px;
+	height: 250px;
 	background-color: #FFC192;
 	border-radius: 10px;	
 }
@@ -56,6 +56,12 @@ table {
 table, th, td {
 	border: 1px solid gray;
 	border-collapse: collapse;
+}
+
+#btn1 {
+	position: absolute;
+	left: 450px;
+	top: 190px;
 }
 </style>
 </head>
@@ -75,11 +81,11 @@ table, th, td {
 				<th width="250" style="background-color: #FDEBC8">대여 기기</th>
 			</tr>
 			<tr align="center">
-				<td width="200" onclick="location.href='doctorResume.html'">12345</td>
-				<td width="150" onclick="location.href='doctorResume.html'">보보픽</td>
-				<td width="150" onclick="location.href='doctorResume.html'">19980301</td>
-				<td width="150" onclick="location.href='doctorResume.html'">골절(3주차)</td>
-				<td width="250" onclick="location.href='doctorResume.html'">목발</td>
+				<td width="200" onclick="location.new='patient_Write.html'">12345</td>
+				<td width="150" onclick="location.href='patient_Write.html'">보보픽</td>
+				<td width="150" onclick="location.href='patient_Write.html'">19980301</td>
+				<td width="150" onclick="location.href='patient_Write.html'">골절(3주차)</td>
+				<td width="250" onclick="location.href='patient_Write.html'">목발</td>
 			</tr>
 			<tr align="center">
 				<td width="200">34897</td>
@@ -103,6 +109,8 @@ table, th, td {
 				<td width="250">All Function 워커</td>
 			</tr>
 		</table>
+		
+		<button id="btn1" style="width: 100px; height: 30px;" onclick="location.href='doctorMenu_p.html'">환자 메뉴로</button>
 	</div>
 </body>
 </html>
