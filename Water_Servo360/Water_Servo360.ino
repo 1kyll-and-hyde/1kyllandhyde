@@ -28,7 +28,7 @@ void loop() {
   
   int Downbutton = digitalRead(11);
   
- if (Downbutton == HIGH) {
+   if (Downbutton == HIGH) {
     Serial.println("DOWN Switch ON");
     myservo.write(0);
     delay(1000);
